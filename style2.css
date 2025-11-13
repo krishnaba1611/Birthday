@@ -12,7 +12,7 @@ body {
   min-height: 100vh;
 }
 
-/* ✨ Star Animation */
+/* ✨ Stars */
 .stars {
   width: 100%;
   height: 100%;
@@ -60,6 +60,8 @@ body {
   font-size: 1rem;
   cursor: pointer;
   transition: 0.3s;
+  position: relative;
+  z-index: 3;
 }
 
 .btn:hover {
@@ -67,7 +69,7 @@ body {
   background: #ff8dc8;
 }
 
-/* 🎞️ Pages */
+/* 🌸 Pages */
 .page {
   display: none;
   flex-direction: column;
@@ -76,88 +78,50 @@ body {
   min-height: 100vh;
   padding: 20px;
   text-align: center;
-  position: relative;
   z-index: 2;
 }
 
 .page.active {
   display: flex;
-  animation: fadeIn 1s ease;
+  animation: fadeIn 0.8s ease;
 }
 
 @keyframes fadeIn {
-  from { opacity: 0; transform: translateY(20px); }
+  from { opacity: 0; transform: translateY(30px); }
   to { opacity: 1; transform: translateY(0); }
 }
 
-/* 🖼️ Gallery */
-.gallery {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 15px;
-  justify-content: center;
+.section-title {
+  font-family: "Great Vibes", cursive;
+  color: #ff9ac1;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  text-shadow: 0 0 10px #ff4d8b;
 }
 
-.gallery img {
+.intro-message, .journey, .promise, .forever {
+  max-width: 600px;
+  text-align: left;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 15px;
+  padding: 20px;
+  line-height: 1.7;
+  color: #ffe6f2;
+  box-shadow: 0 0 15px rgba(255, 182, 193, 0.2);
+}
+
+/* Gallery & Videos */
+.gallery img, .video-grid video {
   width: 90%;
   max-width: 350px;
   border-radius: 15px;
-  box-shadow: 0 4px 20px rgba(255, 182, 193, 0.4);
-  transition: transform 0.3s;
+  margin: 10px;
+  box-shadow: 0 4px 20px rgba(255, 182, 193, 0.3);
 }
 
-.gallery img:hover {
-  transform: scale(1.05);
-}
-
-/* 🎥 Videos */
-.video-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 15px;
-  width: 100%;
-}
-
-.video-grid video {
-  width: 100%;
-  border-radius: 15px;
-  box-shadow: 0 0 10px rgba(255, 192, 203, 0.3);
-}
-
-/* 💌 Letter */
-.letter-text {
-  background: rgba(255, 255, 255, 0.1);
-  color: #ffe6f2;
-  padding: 20px;
-  border-radius: 20px;
-  max-width: 600px;
-  line-height: 1.7;
-  font-size: 1rem;
-  box-shadow: 0 4px 20px rgba(255, 182, 193, 0.2);
-  text-align: left;
-  white-space: pre-wrap;
-}
-
-/* 💫 Journey, Promise & Forever */
-.journey, .promise, .forever, .intro-message {
-  max-width: 600px;
-  text-align: left;
-  line-height: 1.8;
-  background: rgba(255, 182, 193, 0.1);
-  padding: 20px;
-  border-radius: 20px;
-  box-shadow: 0 0 15px rgba(255, 182, 193, 0.2);
-  color: #ffeaf0;
-}
-
-.journey b {
-  color: #ffc0cb;
-}
-
-/* 🪄 Responsiveness */
+/* Responsiveness */
 @media (max-width: 600px) {
-  .intro-title { font-size: 1.8rem; }
-  .btn { padding: 10px 20px; font-size: 0.9rem; }
-  .gallery img, .video-grid video { width: 95%; }
-  .letter-text, .journey, .promise, .forever, .intro-message { font-size: 0.9rem; padding: 15px; }
+  .section-title { font-size: 1.6rem; }
+  .btn { font-size: 0.9rem; padding: 10px 18px; }
+  .intro-message, .journey, .promise, .forever { font-size: 0.9rem; padding: 15px; }
 }
