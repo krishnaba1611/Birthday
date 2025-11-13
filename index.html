@@ -8,96 +8,94 @@
   <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-
   <div class="stars"></div>
 
-  <!-- 🎁 Intro -->
-  <div class="intro-screen" id="introScreen">
+  <!-- INTRO SCREEN -->
+  <section class="intro-screen" id="introScreen">
     <h1 class="intro-title">🎉 Ready for your surprise, Miss Makhecha? 💝</h1>
     <button id="startBtn" class="btn">Start Surprise ✨</button>
-  </div>
+  </section>
 
-  <!-- 🌸 Main Content -->
-  <div id="mainContent" class="hidden">
+  <!-- MAIN CONTENT -->
+  <main id="mainContent" class="hidden">
     <audio id="bdayMusic" src="music/birthday.mp3" loop></audio>
 
-    <div class="page active" id="page1">
+    <!-- 1 -->
+    <section class="page active">
       <h2 class="section-title">💖 My Heartfelt Wishes</h2>
-      <div class="intro-message">
+      <div class="text-block">
         <p>
-          Hey Brinda 💕,  
-          On this special day, I just want you to know how incredibly thankful I am that you exist.  
-          You’ve brought light into my life in ways words can’t explain — your laughter, your kindness, and your presence mean everything. 🌷  
-          This little surprise is just my way to show how special you are and how much you’ve become a part of my world.  
-        </p>
-        <p>
+          Hey Brinda 💕, On this special day, I just want you to know how incredibly thankful I am that you exist.
+          You’ve brought light into my life in ways words can’t explain. 🌷  
           So sit back, smile, and let’s take a small trip down memory lane —  
           filled with all the moments that made our story so beautiful 💫
         </p>
       </div>
-    </div>
+    </section>
 
-    <div class="page" id="page2">
+    <!-- 2 -->
+    <section class="page">
       <h2 class="section-title">📸 Beautiful Memories</h2>
       <div class="gallery">
-        <img src="photo1.jpg" alt="">
-        <img src="photo3.jpg" alt="">
-        <img src="photo5.jpg" alt="">
-        <img src="cake.png" alt="">
+        <img src="images/photo1.jpg">
+        <img src="images/photo3.jpg">
+        <img src="images/photo5.jpg">
+        <img src="images/cake.png">
       </div>
-    </div>
+    </section>
 
-    <div class="page" id="page3">
+    <!-- 3 -->
+    <section class="page">
       <h2 class="section-title">🎬 Our Videos Together</h2>
       <div class="video-grid">
-        <video src="video1.mp4" controls></video>
-        <video src="video2.mp4" controls></video>
-        <video src="video3.mp4" controls></video>
-        <video src="video4.mp4" controls></video>
+        <video src="videos/video1.mp4" controls></video>
+        <video src="videos/video2.mp4" controls></video>
       </div>
-    </div>
+    </section>
 
-    <div class="page" id="page4">
+    <!-- 4 -->
+    <section class="page">
       <h2 class="section-title">💌 Letter from the Heart</h2>
       <p id="letterText" class="letter-text"></p>
-    </div>
+    </section>
 
-    <div class="page" id="page5">
+    <!-- 5 -->
+    <section class="page">
       <h2 class="section-title">💫 Journey of Us</h2>
-      <div class="journey">
-        <p>📅 <b>19/08/2025</b> — Snap request accepted 💌</p>
-        <p>📅 <b>27/08/2025</b> — Active ride together and shared secrets 💬💞</p>
-        <p>📅 <b>29/08/2025</b> — First chocolate to make her mood better 🍫</p>
-        <p>📅 <b>02/09/2025</b> — Went to the temple together — from that day our journey began and she became my comfort person 🌸✨</p>
+      <div class="text-block">
+        <p>📅 19/08/2025 — Snap request accepted 💌</p>
+        <p>📅 27/08/2025 — Active ride together and shared secrets 💬💞</p>
+        <p>📅 29/08/2025 — First chocolate to make her mood better 🍫</p>
+        <p>📅 02/09/2025 — Went to the temple together — from that day our journey began and you became my comfort person 🌸✨</p>
       </div>
-    </div>
+    </section>
 
-    <div class="page" id="page6">
+    <!-- 6 -->
+    <section class="page">
       <h2 class="section-title">🤝 Promises to You</h2>
-      <div class="promise">
+      <div class="text-block">
         <p>💖 I promise to always stand by your side no matter what.</p>
         <p>🌈 I promise to make you smile whenever you feel low.</p>
         <p>🌸 I promise to support your dreams and celebrate your wins.</p>
         <p>🍫 I promise to bring chocolates whenever you’re upset.</p>
-        <p>✨ I promise to never let go — because you mean more than words can say.</p>
       </div>
-    </div>
+    </section>
 
-    <div class="page" id="page7">
+    <!-- 7 -->
+    <section class="page">
       <h2 class="section-title">💖 Forever & Always</h2>
-      <div class="forever">
+      <div class="text-block">
         <p>
           You are a gift, my favorite person.  
           "Besides chocolate, you're my favorite." 🍫  
-          "I’ll always try to stay with you forever" ∞  
-          May this birthday fill your heart with light, love, and cake! 🎂💕  
+          May this birthday fill your heart with love and laughter! 🎂💕  
           Once again — Happy Birthday, Miss Makhecha! 💝
         </p>
       </div>
-    </div>
+    </section>
 
     <button id="nextBtn" class="btn next">Next ➜</button>
-  </div>
+  </main>
 
   <script src="script.js"></script>
 </body>
