@@ -1,63 +1,124 @@
-* { margin:0; padding:0; box-sizing:border-box; font-family:"Poppins",sans-serif; }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
 
 body {
   background: radial-gradient(circle at center, #0d0d0d, #1a1a1a);
-  color:#fff;
-  overflow-x:hidden;
-  min-height:100vh;
+  color: #fff;
+  overflow-x: hidden;
+  min-height: 100vh;
 }
 
-/* stars */
+/* ✨ Stars */
 .stars {
-  width:100%; height:100%;
-  background:url("https://www.transparenttextures.com/patterns/stardust.png") repeat;
-  position:fixed; top:0; left:0; z-index:0;
-  animation:twinkle 10s infinite linear;
-  opacity:.3;
+  width: 100%;
+  height: 100%;
+  background: url("https://www.transparenttextures.com/patterns/stardust.png") repeat;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  animation: twinkle 10s infinite linear;
+  opacity: 0.3;
 }
-@keyframes twinkle { 0%,100%{opacity:.3;} 50%{opacity:.6;} }
+@keyframes twinkle {
+  0%, 100% { opacity: 0.3; }
+  50% { opacity: 0.6; }
+}
 
-/* intro */
+/* Intro */
 .intro-screen {
-  height:100vh; display:flex; flex-direction:column;
-  justify-content:center; align-items:center; text-align:center;
-  z-index:2; position:relative;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  z-index: 2;
+  position: relative;
 }
 .intro-title {
-  font-family:"Great Vibes",cursive;
-  font-size:2.2rem; color:#ff9ac1; margin-bottom:30px;
-  text-shadow:0 0 10px #ff4d8b;
+  font-family: "Great Vibes", cursive;
+  font-size: 2.2rem;
+  color: #ff9ac1;
+  margin-bottom: 30px;
+  text-shadow: 0 0 10px #ff4d8b;
 }
 .btn {
-  background:#ff69b4; color:#fff; border:none; border-radius:50px;
-  padding:12px 25px; font-size:1rem; cursor:pointer; transition:.3s;
-  z-index:3; position:relative;
+  background: #ff69b4;
+  color: #fff;
+  border: none;
+  border-radius: 50px;
+  padding: 12px 25px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s;
+  z-index: 3;
+  position: relative;
 }
-.btn:hover { transform:scale(1.05); background:#ff8dc8; }
+.btn:hover {
+  transform: scale(1.05);
+  background: #ff8dc8;
+}
 
-/* main pages */
-.page { display:none; flex-direction:column; align-items:center; justify-content:center; min-height:100vh; padding:20px; text-align:center; z-index:2; }
-.page.active { display:flex; animation:fadeIn .8s ease; }
-@keyframes fadeIn { from{opacity:0;transform:translateY(30px);} to{opacity:1;transform:translateY(0);} }
+/* Pages */
+.page {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 20px;
+  text-align: center;
+  z-index: 2;
+}
+.page.active {
+  display: flex;
+  animation: fadeIn 1s ease;
+}
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
 
 .section-title {
-  font-family:"Great Vibes",cursive; font-size:2rem; color:#ff9ac1; margin-bottom:20px; text-shadow:0 0 10px #ff4d8b;
+  font-family: "Great Vibes", cursive;
+  font-size: 2rem;
+  color: #ff9ac1;
+  margin-bottom: 20px;
+  text-shadow: 0 0 10px #ff4d8b;
 }
 
 .text-block {
-  background:rgba(255,255,255,0.05);
-  border-radius:15px; padding:20px; line-height:1.7; color:#ffe6f2;
-  max-width:600px; box-shadow:0 0 15px rgba(255,182,193,0.2);
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 15px;
+  padding: 20px;
+  line-height: 1.7;
+  color: #ffe6f2;
+  max-width: 600px;
+  box-shadow: 0 0 15px rgba(255, 182, 193, 0.2);
 }
 
-/* gallery + video */
+/* Gallery + Videos */
 .gallery img, .video-grid video {
-  width:90%; max-width:350px; border-radius:15px; margin:10px;
-  box-shadow:0 4px 20px rgba(255,182,193,0.3);
+  width: 90%;
+  max-width: 350px;
+  border-radius: 15px;
+  margin: 10px;
+  box-shadow: 0 4px 20px rgba(255, 182, 193, 0.3);
+}
+.video-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
-@media (max-width:600px) {
-  .intro-title { font-size:1.8rem; }
-  .btn { padding:10px 20px; font-size:.9rem; }
-  .text-block { font-size:.9rem; padding:15px; }
+/* Responsive */
+@media (max-width: 600px) {
+  .intro-title { font-size: 1.8rem; }
+  .btn { padding: 10px 20px; font-size: 0.9rem; }
+  .text-block { font-size: 0.9rem; padding: 15px; }
 }
