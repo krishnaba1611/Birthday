@@ -1,124 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Happy Birthday Favourite Junior Ever 💖</title>
-  <link rel="stylesheet" href="style2.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Pinyon+Script&family=Playfair+Display:wght@400;500;700&family=Great+Vibes&display=swap" rel="stylesheet">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Happy Birthday Brinda 💖</title>
+    <link rel="stylesheet" href="style2.css" />
+  </head>
+  <body>
+    <div id="introScreen" class="intro-screen">
+      <h1 class="title">🎉 Happy Birthday Brinda 💕</h1>
+      <button id="startBtn" class="btn">Tap to Begin 💫</button>
+    </div>
 
-  <!-- Intro Page -->
-  <div class="intro-screen" id="introScreen">
-    <h1 class="intro-title">🎁 Ready for your surprise, Miss Makhecha? 💝</h1>
-    <button id="startBtn">Start Surprise ✨</button>
-    <div id="introSparkles"></div>
-  </div>
+    <div id="mainContent" class="hidden">
+      <audio id="bdayMusic" src="birthday.mp3" loop></audio>
 
-  <!-- Main Content -->
-  <div class="main-content hidden" id="mainContent">
-    <audio id="bdayMusic" src="birthday.mp3" loop></audio>
+      <section class="page active">
+        <h2>🎂 Our Special Moments</h2>
+        <div class="media-container">
+          <img src="photo1.jpg" alt="Moment 1" />
+          <img src="photo2.jpg" alt="Moment 2" />
+          <img src="photo3.jpg" alt="Moment 3" />
+        </div>
+      </section>
 
-    <!-- Birthday Greeting -->
-    <section class="page active" id="birthday">
-          <div class="photo-gallery responsive-gallery">
+      <section class="page">
+        <h2>🎬 Our Videos</h2>
+        <div class="media-container">
+          <video controls src="video1.mp4"></video>
+          <video controls src="video2.mp4"></video>
+          <video controls src="video3.mp4"></video>
+        </div>
+      </section>
 
-         <img src="cake.png" alt="Cake">
-        <img src="photo1.jpg" alt="Memory 1">
-      <h1 class="main-title">🎂 Happy Birthday Favourite Junior 💖</h1>
-    
-       
-        <img src="photo3.jpg" alt="Memory 2">
-        <img src="cake.png" alt="Cake">
-      </div>
-    </section>
+      <section class="page">
+        <h2>💌 Letter for You</h2>
+        <p id="letterText" class="letter-text"></p>
+      </section>
 
-    <!-- Letter Page -->
-    <section class="page" id="letter">
-      <h2 class="section-title">💌 A Letter from the Heart</h2>
-      <div class="letter-box">
-        <p id="letterText"></p>
-      </div>
-      <div class="photo-gallery responsive-gallery">
-        <img src="flower2.png" alt="Flower">
-        <img src="photo4.jpg" alt="Memory">
-        <img src="photo5.jpg" alt="Memory">
-        <img src="flower2.png" alt="Flower">
-      </div>
-    </section>
+      <section class="page">
+        <h2>🌸 Journey Page</h2>
+        <div class="journey">
+          <p><b>19/08/2025</b> — Snap request accepted 💫</p>
+          <p><b>27/08/2025</b> — Active ride together, shared secrets, and got close ❤️</p>
+          <p><b>29/08/2025</b> — First chocolate to make her mood better 🍫</p>
+          <p><b>02/09/2025</b> — Went temple together — that day journey began, and she became my comfort person 💖</p>
+        </div>
+      </section>
 
-    <!-- Memory Wall -->
-    <section class="page" id="memories">
-      <h2 class="section-title">📸 Beautiful Memories Together</h2>
-      <div class="photo-wall responsive-gallery">
-        <img src="photo11.jpg" alt="Memory">
-        <img src="photo8.jpg" alt="Memory">
-        <img src="photo7.jpg" alt="Memory">
-      </div>
-    </section>
+      <button id="nextBtn" class="btn next">Next ➜</button>
+    </div>
 
-    <!-- Video Memories -->
-    <section class="page" id="videos">
-      <h2 class="section-title">🎞️ Our Fun Memories in Motion</h2>
-      <div class="video-grid">
-        <video src="video1.mp4" autoplay muted loop></video>
-        <video src="video2.mp4" autoplay muted loop></video>
-        <video src="video3.mp4" autoplay muted loop></video>
-        <video src="video4.mp4" autoplay muted loop></video>
-      </div>
-    </section>
-
-    <!-- 🌸 Journey Page -->
-    <section class="page" id="journey">
-      <h2 class="section-title">💫 Journey of Us 💫</h2>
-      <div class="journey-content">
-        <p>📅 <b>19/08/2k25</b> — Snap request accepted 💌</p>
-        <p>📅 <b>27/08/2k25</b> — Active ride together and shared secrets, getting closer 💬💞</p>
-        <p>📅 <b>29/08/2k25</b> — First chocolate to make her mood better 🍫</p>
-        <p>📅 <b>02/09/2k25</b> — Went to the temple together and felt the best; from that day our journey began, and she became my comfort person... 🌸✨</p>
-      </div>
-    </section>
-
-    <!-- Promise Page -->
-    <section class="page" id="promise">
-      <h2 class="section-title">🤝 My Promises to You</h2>
-      <div class="promise-content">
-        <img src="photo2.jpg" class="promise-photo" alt="Promise">
-        <p>
-          I’m your biggest supporter. I’ll be there when things fall apart, not only when they shine.  
-          I promise to listen, to cheer for your wins, and to remind you how strong you are.  
-          I promise I will never let you feel down, will always take care of you like an elder sister,  
-          never judge you, always try to make you smile, and keep our bond forever. 🫀🤗  
-          "I promise to never let our friendship fade away." 🫂  
-          "I promise to protect, guide, and love you unconditionally." ✨  
-          "I promise to keep all our secrets safe." ❤️‍🩹
-        </p>
-        <img src="photo10.jpg" class="promise-photo" alt="Promise">
-      </div>
-    </section>
-
-    <!-- Forever Page -->
-    <section class="page" id="forever">
-      <h2 class="section-title">💖 Forever & Always</h2>
-      <div class="forever-content">
-        <img src="photo9.jpg" class="promise-photo" alt="Forever">
-        <p>
-          You are a gift, my favorite person.  
-          "Besides chocolate, you're my favorite." 🍫  
-          "I’ll always try to stay with you forever" ∞  
-          May this birthday fill your heart with light, love, and cake! 🎂💕  
-          The surprise is waiting for you — be ready for the next morning, beta! 🫀  
-          Once again — Happy Birthday, Miss Makhecha! 💝
-        </p>
-        <img src="photo9.jpg" class="promise-photo" alt="Forever">
-      </div>
-    </section>
-
-    <button id="nextBtn">Next ➜</button>
-  </div>
-
-  <div id="glitter"></div>
-  <script src="script.js" defer></script>
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>
